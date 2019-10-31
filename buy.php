@@ -17,7 +17,7 @@
              }
 
              body{
-             	background:url('../images/14300226-thank-you-for-shopping-by.jpg') no-repeat center center;
+             	background:url('images/bg-01.jpg') no-repeat center center;
              	background-size: 100% 110%;
              	width: 100%;
              	height: 100vh;

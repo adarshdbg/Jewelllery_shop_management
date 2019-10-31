@@ -43,202 +43,55 @@
          }
  ?>
 
-<!doctype html>
-<html>
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport"
-                 content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-      <meta http-equiv="X-UA-Compatible"  content="ie=edge">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JewelStore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-        <div class="header">
-      <title>Shopping Cart</title>
-    </div>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style9.css">
 
-      <style>
-             @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-
-             *{
-             	margin:0px;
-             	padding:0px;
-             }
-
-             .bgimage{
-             	background-image: url('Fall19-NewDesigns-Hero.jfif');
-             	background-size: 100% 110%;
-             	width: 100%;
-             	height: 100vh;
-             }
-
-             .menu{
-
-             	width: 100%;
-             	height: 100px;
-             	background-color: rgba(0,0,0,0.5);
-             }
-
-             .leftmenu{
-             	width: 30%;
-             	line-height: 100px;
-             	float: left;
-             	/*background-color: yellow;*/
-             }
-
-             .leftmenu h4{
-             	padding-left: 70px;
-             	font-weight: bold;
-             	color: orange;
-             	font-size: 40px;
-             	font-family: 'Montserrat', sans-serif;
-             }
-
-
-             .rightmenu{
-             	width:70%;
-             	height: 100px;
-             	float: right;
-             /*	background-color: red; */
-             }
-
-             .rightmenu ul{
-             	margin-left: 400px;
-             }
-
-             .rightmenu ul li {
-             	font-family: 'Montserrat', sans-serif;
-             	display: inline-block;
-             	list-style: none;
-             	font-size: 20px;
-             	color:white;
-             	font-weight: bold;
-             	line-height: 100px;
-             	margin-left: 30px;
-             	text-transform: uppercase;
-
-             }
-
-             #fisrtlist{
-             	color: orange;
-             }
-
-             .rightmenu ul li:hover{
-             	color: orange;
-             }
-
-             .text{
-             	width: 100%;
-             	margin-top: 100px;
-             	text-transform: uppercase;
-             	text-align: center;
-             	color: #4287f5;
-             }
-
-             .text h4{
-
-             	font-size: 10px;
-             	font-family: 'Open Sans', sans-serif;
-             }
-
-             .text h1{
-             	font-size:70px;
-             	font-family: 'Montserrat', sans-serif;
-             	font-weight: 100px;
-             	margin:14px 0px;
-             }
-
-             .text h3{
-             	font-size: 20px;
-             	font-family: 'Open Sans', sans-serif;
-             }
-
-             #buttonone{
-             	background-color: orange;
-             	border: none;
-             	font-size: 15px;
-             	font-weight: bold;
-             	text-transform: uppercase;
-             	line-height: 40px;
-             	width: 150px;
-             	font-family: 'Montserrat', sans-serif;
-             	margin-top: 25px;
-             	border: 3px solid white;
-             }
-
-             #buttontwo{
-
-             	background-color: orange;
-             	border: none;
-             	font-family: 'Montserrat', sans-serif;
-             	text-transform: uppercase;
-             	font-weight: bold;
-             	line-height: 40px;
-             	border: 3px solid white;
-             	width: 150px;
-             }
-
-
-             .product{
-                    border: 1px solid #eaeaec;
-                    margin: -1px 19px 3px -1px;
-                    padding: 10px;
-                    text-align: center;
-                    background-color: #efefef;
-                    }
-                    table, th, tr{
-                      text-align: center;
-                    }
-                    .title2{
-                      text-align: center;
-                      color: #66afe9;
-                      background-color: #efefef;
-                      padding: 2%;
-                    }
-                    h2{
-                      text-align: center;
-                      color: #66afe9;
-                      background-color: #efefef;
-                      padding: 2%;
-                    }
-                    table th{
-                      background-color: #efefef;
-                    }
-                    .pic{
-                      width: 400px;
-                      height: 225px;
-                    }
-                    .picbig{
-                      position: absolute;
-                      width: 0px;
-                      -webkit-transition: width 0.3s linear 0s;
-                      transition: width 0.3s linear 0s;
-                      z-index: 50;
-                    }
-                    .pic:hover + .picbig{
-                      width: 500px;
-                    }
-                    .zoomImage{
-                      width:500px;
-                      height: 250px;
-                      overflow: hidden;
-                      text-align: center;
-                    }
-                    img{
-                      max-width: 100%;
-                      max-height: 100%;
-                      transition: 0.75s;
-                    }
-                    .zoomImage:hover img{
-                      transform: scale(1.3);
-                    }
-      </style>
+  
 </head>
 <body>
   <div class="bgimage">
     <div class="menu">
+      </head>
+  <body header id="main-header" data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jewellery Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index1.html" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link">LOGOUT</a></li>
+           
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="site-cover" style="background-image: url(images/bg-01.jpg);" id="section-home">
 
       <div class="leftmenu">
         <h4> SHOPPING CART </h4>
@@ -246,15 +99,17 @@
 
       <div class="rightmenu">
         <ul>
-          <li id="fisrtlist"> HOME </li>
-          <li > <a href="index1.html" style="text-decoration: none; text-color:blue;">GALLERY </a></li>
-          <li><a href="login.php" style="text-decoration: none; text-color:white;">LOGOUT </a></li>
+          <li id="fisrtlist"> <!-- HOME --> </li>
+         <!--  <li > <a href="index1.html" style="text-decoration: none; text-color:blue;">GALLERY </a></li>
+          <li><a href="login.php" style="text-decoration: none; text-color:white;">LOGOUT </a></li> -->
           <!-- <li><a href="contact.php" style="text-decoration: none; text-color:white;">CONTACT US </a></li> -->
 
 
         </ul>
       </div>
+    </section>
 </div>
+ 
 <div class="text">
  <!--  <h2> DESIGN • DEVELOPMENT • BRANDING </h2>
   <h1> SHOPPING CART  </h1> -->
@@ -262,7 +117,9 @@
  <!--  <button id="buttonone"> like share </button>
   <button id="buttontwo"> Subscribe </button> -->
 </div>
+<section class="site-cover" style="background-image: url(images/bg-01.jpg);" id="section-home">
     </div>
+
 
             <?php
                      $query = "SELECT * FROM itemdetails ORDER BY Iid ASC";
@@ -310,7 +167,7 @@
                     <th width="30%">Product Name</th>
                     <th width="10%">Quantity</th>
                     <th width="13%">Price Details</th>
-                    <!-- <th width="10%">Total Price</th> -->
+                    <th width="10%">Total Price</th>
                     <th width="17%">Remove Item</th>
               </tr> -->
               <?php
@@ -343,5 +200,6 @@
       </div>
 
           </div>
+        </section>
 </body>
 </html>

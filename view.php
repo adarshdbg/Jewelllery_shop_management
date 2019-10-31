@@ -35,7 +35,7 @@ echo "$productid";
 	</header>
 
     <div id="undr">
-		<img class="bdimg" src="IMG_5521-copy.jpgs">
+		<img class="bdimg" src="images/bg-01.jpg">
 	</div>
 <?php
 $sql="SELECT * FROM `itemdetails` WHERE Iid=$productid";

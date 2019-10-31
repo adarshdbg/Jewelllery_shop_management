@@ -231,71 +231,61 @@ mysqli_close($conn);
 
 
 <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <style type="text/css">
+<html lang="en">
+  <head>
+    <title>JewelStore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #fc4503;
-    overflow: hidden;
-}
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+    
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style9.css">
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
+  </head>
+  <body header id="main-header" data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jewellery Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-td{
-  color:  white;
-}
-.colors{
-  color:#05f569;
-}
-#back{
-  margin-left: 1200px;
-}
-</style>
-</head>
-<body background="Images/ornaments_texture1105.jpg">
-<div>
-<font color="orange" size="10"><b align="margin-left"><pre>    J E W E L L E R S</pre></b></font>
-</div>
-<div class="topnav" id="myTopnav">
-
-
-  <!-- <a href="rates.php">Rates</a> -->
-  <a href="billing.php">Billing</a>
-  <a href="items.php">Items</a>
-  <a href="customer.php">Customer</a>
-  <a href="supplier.php">Suppliers</a>
-  <a href="employee.php">Employee</a>
-  <!-- <a href="about.php">AboutUs</a> -->
-  <div id="back">
-    <a href="index.php">Back</a>
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="supplier.php" class="nav-link">Billing</a></li>
+            <li class="nav-item"><a href="items.php" class="nav-link">Items</a></li>
+            <li class="nav-item"><a href="customer.php" class="nav-link">Customer</a></li>
+            <li class="nav-item"><a href="supplier.php" class="nav-link">Suppliers</a></li>
+            <li class="nav-item"><a href="employee.php" class="nav-link">Employee</a></li>
+           
+             <div id="back">
+    <li class="nav-item"><a href="index.html" class="nav-link">Back</a></li>
   </div>
-</div>
-<br><br><br>
-<div align="center">
-<form method="post" action="billing.php">
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="site-cover" style="background-image: url(images/bg-01.jpg);" id="section-home">
+
+<br>
+<hr>
+<br>
+<!-- <div align="center">
+<form method="post" action="billing.php"> -->
 <!-- <h2 class="colors"> IF OLD Customer :-</h2> <input type="text" name="Custid" placeholder="Customer ID">
   <h3 class="colors">Add Items By Id :-</h3>
 <input type="text" name="Itemid1" placeholder="Item id">
@@ -303,10 +293,11 @@ td{
 <input type="text" name="Itemid3" placeholder="Item id">
 <input type="text" name="Itemid4" placeholder="Item id">
   <input type="submit" value="submit"></h2><br> -->
-</form>
+<!-- </form> -->
 
 <form method="post" action="add_bill.php">
-  <table border="3px" style="width: 100%">
+  </br>
+  <table>
     <tr>
       <td colspan="6">Bill no :- <input type="text" name="bid"> </td>
       <td align="right" colspan="2">Bill Date :-  <input type="date" name="bdate">   </td>
@@ -401,6 +392,11 @@ td{
   </tr>
 
 </table>  -->
+</table><!-- ss="container"> -->
+        <div class="row align-items-center justify-content-center text-center site-vh-100">
+        </div>
+  </div>
+</section>
 
 </div>
 </body>

@@ -38,7 +38,7 @@ a{text-decoration:none; color:inherit}
 	</header>
 
     <div id="undr">
-		<img class="bdimg" src="IMG_5521-copy.jpg">
+		<img class="bdimg" src="images/bg-01.jpg">
 	</div>
 
     <div id="lowrbdy">
