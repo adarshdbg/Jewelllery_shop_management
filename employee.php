@@ -71,15 +71,15 @@ mysqli_close($conn);
 
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="supplier.php" class="nav-link">Billing</a></li>
+            <li class="nav-item"><a href="supplier.php" class="nav-link">Billing</a></li>
             <li class="nav-item"><a href="items.php" class="nav-link">Items</a></li>
             <li class="nav-item"><a href="customer.php" class="nav-link">Customer</a></li>
             <li class="nav-item"><a href="supplier.php" class="nav-link">Suppliers</a></li>
-            <li class="nav-item"><a href="employee.php" class="nav-link">Employee</a></li>
+            <li class="nav-item active"><a href="employee.php" class="nav-link">Employee</a></li>
            
-             <div id="back">
+             
     <li class="nav-item"><a href="index.html" class="nav-link">Back</a></li>
-  </div>
+  
         </div>
       </div>
     </nav>

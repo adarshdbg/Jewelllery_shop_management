@@ -8,7 +8,7 @@ session_start();
 		</div>
 
 	<div class="acount">
-		<div class="aclogo"><i class="fa fa-user" style="color:#fff; font-size:15px; margin-top:2px"></i></div>
+		
 		<div class="actext"><a href="cart.php">My Account</a></div>
 
 	</div>
@@ -35,7 +35,7 @@ session_start();
 </div>
 
 
-		<div class="button"><i class="" style="color:#fff; font-size:15px; margin-top:2px"></i></div>
+		
 		<div class="actext"><a href="login.php">LOGOUT</a></div>
 
 	</div>

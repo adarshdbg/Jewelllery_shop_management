@@ -13,17 +13,40 @@ include('config1.php');
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Rubik" rel="stylesheet">
 <style>
-a{text-decoration:none; color:inherit}
-#undr{width:100%; height:580px; position:absolute; top:75px; left:0px;}
-.bdimg{width:100%; height:200%}
-#lowrbdy{ position:absolute; top:90px; left:0px;width:100%; height:100px}
-.outer{width:270px; height:270px; background:rgba(255,255,255,0.8); float:left; margin-left:55px; margin-bottom:10px}
-.imgdv{width:100px;height:140px;margin:10px auto;}
-.imgdv img{width:100%; height:100%}
-.pname{ text-align:center; width:100%; height:20px; font-size:15px; margin-top:-14px; margin-bottom:10px}
-.prs{ text-align:center; font-size:24px; margin:0px}
-.butndv{width:140px; height:40px; margin:auto; margin-top:-10px}
-.butn{width:100%; height:100%; background:rgba(78,172,240,1.00); border:none; color:#fff; font-size:18px; border-radius:6px}
+a{
+	text-decoration:none; color:inherit
+}
+#undr{
+	width:100%; height:580px; position:absolute; top:75px; left:0px;
+}
+.bdimg
+{
+	width:100%; height:200%
+}
+#lowrbdy{ 
+	position:absolute; top:90px; left:0px;width:100%; height:100px
+}
+.outer{
+	width:270px; height:270px; background:rgba(255,255,255,0.8); float:left; margin-left:55px; margin-bottom:10px
+}
+.imgdv{
+	width:100px;height:140px;margin:10px auto;
+}
+.imgdv img{
+	width:100%; height:100%
+}
+.pname{
+	 text-align:center; width:100%; height:20px; font-size:15px; margin-top:-14px; margin-bottom:10px
+	}
+.prs{ 
+	text-align:center; font-size:24px; margin:0px
+}
+.butndv{
+	width:140px; height:40px; margin:auto; margin-top:-10px
+}
+.butn{
+	width:100%; height:100%; background:rgba(78,172,240,1.00); border:none; color:#fff; font-size:18px; border-radius:6px
+}
 .outer:hover{ background:#fff}
 .outer:hover .butn{ background:#4A7FDC; transition:all 0.2s ease-in-out; cursor:pointer}
 </style>

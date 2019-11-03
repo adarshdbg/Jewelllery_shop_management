@@ -271,9 +271,9 @@ mysqli_close($conn);
             <li class="nav-item"><a href="supplier.php" class="nav-link">Suppliers</a></li>
             <li class="nav-item"><a href="employee.php" class="nav-link">Employee</a></li>
            
-             <div id="back">
+             
     <li class="nav-item"><a href="index.html" class="nav-link">Back</a></li>
-  </div>
+ 
         </div>
       </div>
     </nav>
