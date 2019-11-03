@@ -190,6 +190,7 @@ h1, h2, h3, h4, h5,
 
 .site-cover {
   background-position: center center;
+  padding: 20px;
 }
 
 .site-cover .site-heading {

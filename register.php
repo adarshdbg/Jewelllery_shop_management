@@ -45,16 +45,13 @@
             <div class="clear"> </div>
           </div>
           <div class="input-group">
-      <!-- <button type="submit" class="btn"name="reg_user">Register</button>
-       <button type="submit" class="btn" name="reg_user1">delete</button>
-    </div> -->
+     
           <input type="submit" value="SIGNUP"class="btn"name="reg_user">
         </form>
         <p>Don't have an Account? <a href="login.php"> Login Now!</a></p>
       </div>
     </div>
-    <!-- copyright -->
-    <!-- //copyright -->
+    
     <ul class="colorlib-bubbles">
       <li></li>
       <li></li>
@@ -68,10 +65,10 @@
       <li></li>
     </ul>
   </div>
-  <!-- //main -->
+
 </body>
 </html>
-<!-- partial -->
+
   
 </body>
 </html>

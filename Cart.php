@@ -66,140 +66,87 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style9.css">
 
+    <link rel="stylesheet" href="helo/css/main.css" />
+
   
-</head>
-<body>
-  <div class="bgimage">
-    <div class="menu">
-      </head>
-  <body header id="main-header" data-spy="scroll" data-target="#site-navbar" data-offset="200">
+  </head>
+  <body>
+      <div class="bgimage">
+      <div class="menu">
+  </head>
+
+  <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Jewellery Store</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
+        
 
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="index1.html" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="index4.php" class="nav-link">PRODUCT</a></li>
             <li class="nav-item"><a href="login.php" class="nav-link">LOGOUT</a></li>
+
            
         </div>
       </div>
     </nav>
     <!-- END nav -->
 
-    <section class="site-cover" style="background-image: url(images/bg-01.jpg);" id="section-home">
-
-      <div class="leftmenu">
-        <h4> SHOPPING CART </h4>
-      </div>
-
-      <div class="rightmenu">
-        <ul>
-          <li id="fisrtlist"> <!-- HOME --> </li>
-         <!--  <li > <a href="index1.html" style="text-decoration: none; text-color:blue;">GALLERY </a></li>
-          <li><a href="login.php" style="text-decoration: none; text-color:white;">LOGOUT </a></li> -->
-          <!-- <li><a href="contact.php" style="text-decoration: none; text-color:white;">CONTACT US </a></li> -->
-
-
-        </ul>
-      </div>
-    </section>
-</div>
- 
-<div class="text">
- <!--  <h2> DESIGN • DEVELOPMENT • BRANDING </h2>
-  <h1> SHOPPING CART  </h1> -->
-  <h2> WELCOME TO JEWELLERY SHOPPING</h2>
- <!--  <button id="buttonone"> like share </button>
-  <button id="buttontwo"> Subscribe </button> -->
-</div>
-<section class="site-cover" style="background-image: url(images/bg-01.jpg);" id="section-home">
-    </div>
-
-
-            <?php
-                     $query = "SELECT * FROM itemdetails ORDER BY Iid ASC";
-                     $result = mysqli_query($con,$query);
-                     if(mysqli_num_rows($result) > 0) {
-
-                       while ($row = mysqli_fetch_array($result)) {
-            ?>
-      <div class="col-sm-12">
-
-                  <form method="post"  action="Cart.php?action=add&id=<?php echo $row["id"]; ?>">
-
-                    <div class="product col-sm-6/2">
-                      <div class="zoomImage">
-
-
-                        <a href="index4.php">
-                          <img class="pic" src="<?php echo $row["image"]; ?>" class="img-responsive" height="200px" width="200px">
-                            <img class="picbig" src="<?php echo $row["image"]; ?>" class="img-responsive" height="200px" width="200px">
-                        </a>
-
-
-                      </div>
-                             <h5 class="text-info"><?php echo $row["Icategory"]; ?></h5>
-                            <h5 class="text-danger"> &#8377 <?php echo $row["price"]; ?> </h5>
-                            <h5 class="badge badge-success"> 4.4 <i class="fa fa-star"> </i> </h5>
-                            <input type="text" name="quantity" class="form-control" value="1" >
-                            <input type="hidden" name="hidden_name" value="<?php echo $row["Icategory"]; ?>">
-                              <input type="hidden" name="hidden_price" value=" <?php echo $row["price"]; ?>">
-                             <!--  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="DEMO Cart"> -->
-                              <a href="checkout.php" style="margin-top: 10px;" class="btn btn-success">BUY NOW</a>
-                        </div>
-                 </form>
-      </div>
-               <?php
-             }
-        }
-
-     ?>
-     <!-- <div style="clear: both"></div>
-     <h3 class="title2">Shopping Cart Details</h3>
-     <div class="table-responsive">
-             <table class="table table-bordered">
-              <tr>
-                    <th width="30%">Product Name</th>
-                    <th width="10%">Quantity</th>
-                    <th width="13%">Price Details</th>
-                    <th width="10%">Total Price</th>
-                    <th width="17%">Remove Item</th>
-              </tr> -->
-              <?php
-                      if(!empty($_SESSION["cart"])) {
-                              $total = 0;
-                              foreach($_SESSION["cart"] as $key => $value){
-                                    ?>
-                    <tr>
-                               <td><?php echo $value["item_name"]; ?></td>
-                               <td><?php echo $value["item_quantity"]; ?></td>
-                               <td>&#8377 <?php echo $value["product_price"]; ?></td>
-
-                               <td><a href="Cart.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
-
-                    </tr>
-                    <?php
-                          //   $total = $total + ($value["item_quantity"] * $value["product_price"]);
-                           }
-                     ?>
-                     <tr>
-                            <!-- <td colspan="3" align="right">Total</td> -->
-
-                            <td></td>
-
-                     </tr>
-                     <?php
-                   }
-                      ?>
-                    </table>
-      </div>
-
+    <section class="banner full">
+        <article>
+          <img src="images/beautiful-jewellery-wallpapers.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>A piece of jewelry is often a piece of art. But it only becomes valuable when emotions are added to it<a href="https://templated.co"></a></p>
+              <h2>JEWELLERY STORE</h2>
+            </header>
           </div>
-        </section>
+        </article>
+        <article>
+          <img src="images/6976744-pendant-peace-leaves-autumn.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>My favorite thing in wardrobe is my jewelry</p>
+              <h2>JEWELLERY STORE</h2>
+            </header>
+          </div>
+        </article>
+        <article>
+          <img src="images/slide03.jpg"  alt="" />
+          <div class="inner">
+            <header>
+              <p>I love jewelry - gold and diamonds. I'm a woman</p>
+              <h2>JEWELLERY STORE</h2>
+            </header>
+          </div>
+        </article>
+        <article>
+          <img src="images/slide04.jpg"  alt="" />
+          <div class="inner">
+            <header>
+              <p>I like for jewelry to tell a story and to be able to talk about what I'm wearing.</p>
+              <h2>JEWELLERY STORE</h2>
+            </header>
+          </div>
+        </article>
+        <article>
+          <img src="images/105122-full_free-download-chinese-new-year-wallpaper-hd-1920x1080-for.jpg"  alt="" />
+          <div class="inner">
+            <header>
+              <p>I wear girls' jeans, a lot of black, and I wear a lot of jewelry. I'm a wacky person!</p>
+              <h2>JEWELLERY STORE</h2>
+            </header>
+          </div>
+        </article>
+      </section>
+
+      <!-- Scripts -->
+      <script src="helo/js/jquery.min.js"></script>
+      <script src="helo/js/jquery.scrollex.min.js"></script>
+      <script src="helo/js/skel.min.js"></script>
+      <script src="helo/js/util.js"></script>
+      <script src="helo/js/main.js"></script>
 </body>
 </html>

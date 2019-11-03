@@ -284,16 +284,7 @@ mysqli_close($conn);
 <br>
 <hr>
 <br>
-<!-- <div align="center">
-<form method="post" action="billing.php"> -->
-<!-- <h2 class="colors"> IF OLD Customer :-</h2> <input type="text" name="Custid" placeholder="Customer ID">
-  <h3 class="colors">Add Items By Id :-</h3>
-<input type="text" name="Itemid1" placeholder="Item id">
-<input type="text" name="Itemid2" placeholder="Item id">
-<input type="text" name="Itemid3" placeholder="Item id">
-<input type="text" name="Itemid4" placeholder="Item id">
-  <input type="submit" value="submit"></h2><br> -->
-<!-- </form> -->
+
 
 <form method="post" action="add_bill.php">
   </br>
@@ -372,26 +363,7 @@ mysqli_close($conn);
   </table>
 </form>
 <br>
-<!-- <form method="post" action="billing.php">
-<h2 class="colors">  Check Billiong Details :- <input type="text" name="Custid" placeholder="Customer ID"><input type="submit" value="submit"></h2>
-</form> -->
-<!-- <table>
-  <tr>
-    <td>Customer id</td>
-    <td>Customer Name</td>
-    <td> Customer address</td>
-    <td> Customer Phone no</td>
-    <!-- <td> Date</td> -->
-  <!-- </tr>
-  <tr>
-    <td><input type="text" name="Cid" value="<?php if(isset($_POST["Custid"])){ echo "$Cid"; } ?>" ></td>
-    <td><input type="text" name="Cname" value="<?php if(isset($_POST["Custid"])){ echo "$Cname"; } ?>" ></td>
-    <td><input type="text" name="Caddress" value="<?php if(isset($_POST["Custid"])){ echo "$Caddress"; }?>"></td>
-    <td><input type="text" name="Cphoneno" value="<?php if(isset($_POST["Custid"])){ echo "$Cphoneno"; }?>"></td> -->
-<!--
-  </tr>
 
-</table>  -->
 </table><!-- ss="container"> -->
         <div class="row align-items-center justify-content-center text-center site-vh-100">
         </div>

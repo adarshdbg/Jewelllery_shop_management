@@ -96,7 +96,8 @@ header{
 	width:100px;
 	float:left;
 	line-height:1.6em;
-	margin-left:8px;
+	margin-left:80px;
+	padding: center;
 	font-size:15px;
 	color:#fff;
 	}

@@ -111,10 +111,7 @@ mysqli_close($conn);
       <td>Customer Phone no</td>
       <td><input type="text" name="Cphoneno" placeholder="" required></td>
     </tr>
-    <!-- <tr> -->
-      <!-- <td>Customer Date</td>
-      <td><input type="date" name="Cdate" placeholder="" required></td>
-    </tr> -->
+    
   </table>
 <input type="submit" value="Submit">
 </form>
