@@ -3,11 +3,10 @@
   $Cname;
   $Caddress;
   $Cphoneno;
-  // $Cdate;
 
 if(isset($_POST["Custid"])){
 
-echo $_POST["Custid"];
+//echo $_POST["Custid"];
 
 $Custid=$_POST["Custid"];
 $conn=mysqli_connect('localhost','root','','jewelleryshop');
@@ -15,14 +14,15 @@ $conn=mysqli_connect('localhost','root','','jewelleryshop');
       die('Could not connect');
    }
    // $sql1=" SELECT  Cid,Cname,Caddress,Cphoneno FROM customerdetails WHERE Cid='12' ";
-   $result = mysqli_query( $conn, " SELECT  Cid,Cname,Caddress,Cphoneno FROM customerdetails WHERE Cid='$Custid' ");
+   $result = mysqli_query( $conn, " SELECT  Cid,Cname,Caddress,Cphoneno FROM employeedetails WHERE Cid='$Custid' ");
   if(!$result)
-  {
+  {echo "<h4>Error</h4>";
     echo("Failed");
   }
    $retval1=mysqli_fetch_assoc($result);
    if( $retval1 < 1){
     echo "No item found ";
+    
    }
   else{
      $Cid=$retval1['Cid'];
@@ -116,8 +116,7 @@ mysqli_close($conn);
 </form>
 <table>
   <form method="post" action="employee.php">
-<h2 class="navbar-brand">  Check Employee Details :- <input type="text" name="Custid" placeholder="Employee ID"><input type="submit" value="submit"></h2>
-</form>
+    <h2 class="navbar-brand">   Check Employee Details :- <input type="text" name="Custid" placeholder="Employee ID"><input type="submit" value="submit"></h2>
   </form>
 <table>
    <tr>
@@ -125,7 +124,6 @@ mysqli_close($conn);
     <td> Name</td>
     <td> Address</td>
     <td> Phone no</td>
-    <!-- <td> Date</td> -->
   </tr>
   <tr>
    <td><input type="text" name="Cid" value="<?php if(isset($_POST["Custid"])){ echo "$Cid"; } ?>" ></td>
@@ -135,7 +133,7 @@ mysqli_close($conn);
 
   </tr>
 
-</table>ss="container">
+</table>
         <div class="row align-items-center justify-content-center text-center site-vh-100">
         </div>
   </div>

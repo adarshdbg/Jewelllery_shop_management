@@ -1,40 +1,38 @@
 <?php
-  $Cid;
-  $Cname;
-  $Caddress;
-  $Cphoneno;
-  // $Cdate;
+  $Sid;
+  $Sname;
+  $Saddress;
+  $Sphoneno;
+  $Sdate;
 
-if(isset($_POST["Custid"])){
-
-echo $_POST["Custid"];
-
-$Custid=$_POST["Custid"];
+if(isset($_POST["suppid"])){
+$suppid=$_POST["suppid"];
 $conn=mysqli_connect('localhost','root','','jewelleryshop');
  if(!$conn ) {
       die('Could not connect');
    }
-   // $sql1=" SELECT  Cid,Cname,Caddress,Cphoneno FROM customerdetails WHERE Cid='12' ";
-   $result = mysqli_query( $conn, " SELECT  Cid,Cname,Caddress,Cphoneno FROM customerdetails WHERE Cid='$Custid' ");
+   //$sql1=" SELECT Sid,Sname,Saddress,Sphoneno,Sdate FROM supplierdetails WHERE Sid=$suppid ";
+   $result = mysqli_query( $conn, " SELECT Sid,Sname,Saddress,Sphoneno,Sdate FROM supplierdetails WHERE Sid='$suppid' " );
+
   if(!$result)
-  {
+  { echo "<h4>Error</h4>";
     echo("Failed");
   }
    $retval1=mysqli_fetch_assoc($result);
    if( $retval1 < 1){
     echo "No item found ";
+     echo "<h4>Error 2</h4>";
    }
-  else{
-     $Cid=$retval1['Cid'];
-    $Cname=$retval1['Cname'];
-    $Caddress=$retval1['Caddress'];
-    $Cphoneno=$retval1['Cphoneno'];
-    // $Cdate=$retval1['Cdate'];
+  else
+  {
+    $Sid=$retval1['Sid'];
+    $Sname=$retval1['Sname'];
+    $Saddress=$retval1['Saddress'];
+    $Sphoneno=$retval1['Sphoneno'];
+    $Sdate=$retval1['Sdate'];
   }
 mysqli_close($conn);
-
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,7 +120,7 @@ mysqli_close($conn);
   <form method="post" action="supplier.php">
 <h2 class="navbar-brand">  Check supplier Details :- <input type="text" name="suppid" placeholder="Supplier ID"><input type="submit" value="submit"></h2>
 </form>
-  </form>
+ 
 <table>
   <tr>
     <td>Supplier id</td>
@@ -139,7 +137,8 @@ mysqli_close($conn);
     <td><input type="date" name="Sdate" value="<?php if(isset($_POST["suppid"])){ echo "$Sdate"; }?>"></td>
   </tr>
 
-</table>ss="container">
+</table>
+<!-- ss="container"> -->
         <div class="row align-items-center justify-content-center text-center site-vh-100">
         </div>
   </div>
