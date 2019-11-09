@@ -28,8 +28,8 @@ echo $Cphoneno;
    $retval1=mysqli_fetch_assoc($result);
    echo $retval1;
    if( $retval1 > 0 ){
-   	echo "Customer already exist";
-   	// header ("Location: customer.php");
+   	echo "  Customer already exist";
+   	//header ("Location: customer.php");
    }
    else
    {

@@ -21,11 +21,7 @@ if (!empty($_POST['username'])) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// echo $username;
-// echo $password;
-  if($username =='admin' && $password=='admin'){
-      header('location: login1.php');
-  }
+
 
 
 
@@ -40,6 +36,7 @@ $password = $_POST['password'];
     //  header('location: index5.php');
     }else {
       array_push($errors, "Wrong username/password combination");
+      echo "Wrong username/password combination";
     }
   // }
 }

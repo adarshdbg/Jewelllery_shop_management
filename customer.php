@@ -22,7 +22,7 @@ $conn=mysqli_connect('localhost','root','','jewelleryshop');
   }
    $retval1=mysqli_fetch_assoc($result);
    if( $retval1 < 1){
-    echo "No item found ";
+    echo " -- No item found ";
    }
   else{
      $Cid=$retval1['Cid'];

@@ -48,7 +48,7 @@
      
           <input type="submit" value="SIGNUP"class="btn"name="reg_user">
         </form>
-        <p>Don't have an Account? <a href="login.php"> Login Now!</a></p>
+        <p>you have an Account? <a href="login.php"> Login Now!</a></p>
       </div>
     </div>
     
